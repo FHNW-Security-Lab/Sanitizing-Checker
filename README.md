@@ -36,6 +36,10 @@ cd ..
 Running the tool on a binary will produce output similar to this:
 
 ```
+$ python3 sanitizing-checker.py test/security_all_on
+
+Security Features Analysis for: test/security_all_on
+----------------------------------------
 ASLR:                  Enabled
 NX/DEP:                Enabled
 PIE:                   Enabled
@@ -47,14 +51,14 @@ Sanitizer Features:
 AddressSanitizer:     Disabled
 ThreadSanitizer:      Disabled
 MemorySanitizer:      Disabled
-UBSan:                Enabled
+UBSan:                Disabled
 
 Coverage Features:
 ----------------------------------------
 Function:             Disabled
-Basic Block:          Enabled
+Basic Block:          Disabled
 Edge:                 Disabled
-Trace:                Enabled  (trace-pc-guard (4/6 symbols) - likely only trace-pc)
+Trace:                Disabled  (None)
 ```
 
 **Note:** Only the trace coverage feature is currently tested.

@@ -1,3 +1,4 @@
+
 # Binary Security Checker
 
 A command-line tool that analyzes binary files to detect enabled security and sanitizing features.
@@ -23,6 +24,12 @@ python3 sanitizing-checker.py <binary>
 ## Testing with Sample Binaries
 
 The `test` folder contains sample binaries to try out the tool. Navigate to the `test` folder and run `main` to experiment with these samples.
+```bash
+cd test
+make
+cd ..
+```
+
 
 ## Example Output
 
@@ -55,7 +62,6 @@ Trace:                Enabled  (trace-pc-guard (4/6 symbols) - likely only trace
 ## License
 
 This project is licensed under BSD 3-Clause Licence.
-
 
 
 
